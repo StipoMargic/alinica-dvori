@@ -1,0 +1,27 @@
+.gallery-wrapper img {
+    padding: 0 1.5rem;
+}
+
+.gallery-wrapper .slick-active {
+    padding: 40px;
+}
+
+.gallery-wrapper .slick-center {
+    transform: scale(1.18);
+}
+.gallery-wrapper .slick-center img {
+    padding: 0;
+    box-shadow: 0 18px 30px 0 black;
+}
+.gallery-wrapper .slick-slide:not(.slick-active) {
+    margin: 20px 0;
+}
+
+.gallery-wrapper .slide:not(.slick-active) {
+    cursor: pointer;
+}
+
+.gallery-wrapper {
+    height: 25rem;
+    max-height: 25rem;
+}

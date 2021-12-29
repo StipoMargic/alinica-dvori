@@ -1,0 +1,45 @@
+.hero {
+    height: 90vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden !important;
+}
+
+.hero img {
+    object-fit: contain;
+    filter: brightness(30%);
+    padding: 0 !important;
+    height: 100% !important;
+    width: 100%;
+}
+
+.hero .slick-active {
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+}
+
+.hero h2 {
+    color: white;
+    z-index: 50;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+}
+
+.slick-dots {
+    height: 3rem;
+    bottom: 0;
+}
+
+.slick-dots li {
+    background: #ececec;
+    border-radius: 50% !important;
+    height: 1rem !important;
+    width: 1rem !important;
+}
+
+.slick-dots .slick-active button {
+    background: orange !important;
+}

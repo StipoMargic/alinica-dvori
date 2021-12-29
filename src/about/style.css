@@ -1,0 +1,14 @@
+.images img {
+    padding-bottom: 2rem;
+    width: 90%;
+}
+
+.about .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .row > div:nth-child(1){
+    font-size: 20px;
+}

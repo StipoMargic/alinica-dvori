@@ -1,0 +1,34 @@
+.luxury-thumbnails{
+    width: 100%;
+    max-width: 100%;
+}
+
+.luxury-thumbnails img {
+    padding: 0;
+    cursor: pointer;
+}
+
+.luxury-thumbnails .slick-active {
+    padding: 0 10px !important;
+}
+
+.luxury-thumbnails .slick-center {
+    transform: scale(1);
+}
+
+.luxury-thumbnails .slick-slide:not(.slick-active) {
+    margin: 0;
+}
+
+.main-pic img {
+    width: 70% !important;
+    height: 70% !important;
+
+    margin-bottom: 2rem;
+}
+
+.main-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
