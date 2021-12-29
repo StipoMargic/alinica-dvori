@@ -10,10 +10,10 @@ import img3 from "../assets/images/3.jpg";
 const Hero = () => {
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
   };
 
   return (
@@ -23,6 +23,9 @@ const Hero = () => {
           <Slider {...settings}>
             <img src={img1} alt=""/>
             <img src={img2} alt=""/>
+            <img src={img3} alt=""/>
+            <img src={img3} alt=""/>
+            <img src={img3} alt=""/>
             <img src={img3} alt=""/>
           </Slider>
       </div>
