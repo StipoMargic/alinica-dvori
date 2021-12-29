@@ -2,3 +2,15 @@
     font-size: 35px;
     margin: 1.5rem 1rem 1.5rem 0;
 }
+.contact {
+    position: relative;
+}
+
+.contact-bg {
+    opacity: .3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
