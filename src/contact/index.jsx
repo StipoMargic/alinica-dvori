@@ -9,15 +9,16 @@ const Contact = () => {
       <div className="container">
           <div className="row">
             <h2 className="text-center py-5">CONTACT US</h2>
+            <h5 className="text-center mb-5">get a discount with direct booking from the host</h5>
           </div>
           <div className="row">
             <div className="col-lg-6 text-center">
-              <div className="icon"><FaUserCircle/> Mijo</div>
-              <div className="icon"><FaPhoneAlt/> + 33333</div>
+              <div className="icon"><FaUserCircle/>Mijo Matijević</div>
+              <div className="icon"><FaPhoneAlt/>+385 91/111-6044</div>
             </div>
             <div className="col-lg-6 text-center">
-              <div className="icon"><FaEnvelope/> mail</div>
-              <div className="icon"><FaMapMarker/>adresa</div>
+              <div className="icon"><FaEnvelope/> <a href="mailto:mijomatijevic1@gmail.com">mijomatijevic1@gmail.com</a></div>
+              <div className="icon"><FaMapMarker/>Ulica Mile Gojsalic 57, Kostanje, Croatia</div>
             </div>
           </div>
       </div>

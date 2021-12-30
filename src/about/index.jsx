@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
-import img1 from "../assets/images/1.jpg";
-import img2 from "../assets/images/2.jpg";
+import img1 from "../assets/images/about/1.jpg";
+import img2 from "../assets/images/about/2.jpg";
 
 const About = () => {
   return (
@@ -9,13 +9,25 @@ const About = () => {
       <div style={{backgroundImage: "url(1.jpg)"}} className="about-bg" />
       <div className="container">
         <div className="row">
-          <div className="col-lg-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-<br/>
-            <br/>
-            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. </div>
+          <div className="col-lg-5">
+            <p>
+              Villa is surrounded by two levels of olive gardens for your relaxation and kids play.
+              The area around the pool has a 6 person sitting area, shower place, 6x lounge chairs,
+              and outdoor kitchen equipped with all necessary appliances: ice maker, coffee machine,
+              barbecue, hob, sink and refrigerated display cabine for drinks and so on. ( new
+              pictures coming soon )
+              From the pool there is a spectacular view of the green slopes and surrounding mountain
+              range. The pool itself is 7x3.5meters with 160cm depth and it's heated on 25°C for
+              your maximum comfort.
+              <br/><br/>
+              There are two mountain bikes at your disposal.
+              All facilities are only for your personal use and not sharing anything with anyone
+              else.
+            </p>
+          </div>
           <div className="col-lg-7 images">
-              <img src={img1} alt=""/>
-              <img src={img2} alt=""/>
+            <img src={img1} alt=""/>
+            <img src={img2} alt=""/>
           </div>
         </div>
       </div>

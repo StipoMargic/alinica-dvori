@@ -3,14 +3,15 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "./style.css";
-import img1 from "../assets/images/1.jpg";
-import img2 from "../assets/images/2.jpg";
-import img3 from "../assets/images/3.jpg";
-import img4 from "../assets/images/4.jpg";
-import img5 from "../assets/images/5.jpg";
 import Modal from "../Modal";
 
-const images = [img1, img2, img3, img4, img5];
+function importAll(r) {
+  let images = {};
+  r.keys().map((item) => { images[item.replace('./', '')] = r(item); });
+  return images;
+}
+
+const images = importAll(require.context('../assets/images/gallery', false, /\.(png|jpe?g|svg)$/));
 
 const getSettings = () => ({
   infinite: true,
@@ -63,7 +64,7 @@ const Gallery = () => {
       <h2 className="text-center py-5">GALLERY</h2>
       <div className="gallery-wrapper">
         <Slider {...settings}>
-          {images.map(image => {
+          {Object.values(images).map(image => {
             return <img src={image} key={image.toString()} onClick={() => handleClick(image)} />
           })}
         </Slider>

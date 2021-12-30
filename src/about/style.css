@@ -10,10 +10,6 @@
     align-items: center;
 }
 
-.about .row > div:nth-child(1) {
-    font-size: 20px;
-}
-
 .images {
     margin-top: 1rem;
     flex-direction: column;

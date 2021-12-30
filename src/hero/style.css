@@ -6,9 +6,8 @@
 }
 
 .hero img {
-    object-fit: cover !important;
     padding: 0 !important;
-    height: 90vh !important;
+    max-height: 90vh !important;
     width: 100%;
 }
 
@@ -17,8 +16,9 @@
     margin: 0 !important;
 }
 
-.hero h2 {
-    color: black !important;
+.hero h1 {
+    text-align: center;
+    color: #343434 !important;
     z-index: 501;
     position: absolute;
     top: 50%;
@@ -57,4 +57,15 @@
     opacity: .3;
     left: 0;
     z-index: 500;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%) !important;
+    width: 250px !important;
+    height: 250px !important;
+    object-fit: contain !important;
+    z-index: 503;
 }
