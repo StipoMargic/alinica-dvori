@@ -14,6 +14,7 @@ const Hero = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    initialSlide: 1
   };
 
   return (
@@ -24,9 +25,6 @@ const Hero = () => {
           <Slider {...settings}>
             <img src={img1} alt=""/>
             <img src={img2} alt=""/>
-            <img src={img3} alt=""/>
-            <img src={img3} alt=""/>
-            <img src={img3} alt=""/>
             <img src={img3} alt=""/>
           </Slider>
       </div>

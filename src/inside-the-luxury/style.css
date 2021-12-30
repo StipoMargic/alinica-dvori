@@ -45,3 +45,7 @@
 .inside-the-luxury {
     position: relative;
 }
+
+.inside-the-luxury p {
+    padding: 2rem 0;
+}
