@@ -1,5 +1,7 @@
 .gallery-wrapper img {
     padding: 0 1.5rem;
+}
+.gallery-wrapper{
     overflow: hidden;
 }
 

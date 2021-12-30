@@ -29,6 +29,7 @@
 
 .slick-dots {
     height: 3rem;
+    overflow: hidden;
     bottom: 0;
     z-index: 592;
 }
@@ -36,8 +37,9 @@
 .slick-dots li {
     background: #ececec;
     border-radius: 50% !important;
-    height: 2rem !important;
-    width: 2rem !important;
+    height: 1.4rem !important;
+    overflow: hidden;
+    width: 1.4rem !important;
 }
 
 .slick-dots .slick-active button {
