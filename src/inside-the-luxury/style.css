@@ -37,6 +37,8 @@
     position: absolute;
     height: 100%;
     opacity: .3;
+background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     top: 0;
     left: 0;
