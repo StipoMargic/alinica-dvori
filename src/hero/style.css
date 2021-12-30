@@ -29,6 +29,7 @@
 .slick-dots {
     height: 3rem;
     bottom: 0;
+    z-index: 592
 }
 
 .slick-dots li {

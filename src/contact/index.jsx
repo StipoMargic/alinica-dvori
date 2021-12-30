@@ -22,7 +22,7 @@ const Contact = () => {
           </div>
       </div>
       <div className="copyright">&copy; {new Date().getFullYear().toString()}<span>Developed by <a
-        href="https://web.facebook.com/stipo.margic/">Stipo Margić</a></span></div>
+        href="https://web.facebook.com/stipo.margic/" target="_blank">Stipo Margić</a></span></div>
     </section>
   );
 };
