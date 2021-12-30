@@ -8,6 +8,7 @@ import img2 from "../assets/images/2.jpg";
 import img3 from "../assets/images/3.jpg";
 import img4 from "../assets/images/4.jpg";
 import img5 from "../assets/images/5.jpg";
+import Modal from "../Modal";
 
 const images = [img1, img2, img3, img4, img5];
 const getSettings = () => ({
@@ -22,6 +23,7 @@ const getSettings = () => ({
 const InsideTheLuxury = () => {
   const [mainPicture, setMainPicture,] = useState(images[0]);
   const [thumbnails, setThumbnails] = useState([]);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const thumb = images.filter(img => img !== mainPicture)
@@ -35,8 +37,8 @@ const InsideTheLuxury = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
-            <div className="main-pic">
-              <img src={mainPicture} alt=""/>
+            <div  className="main-pic">
+              <img style={{zIndex: 300, cursor: "pointer"}} onClick={() => setIsOpen(true)} src={mainPicture} alt=""/>
             </div>
             <div className="luxury-thumbnails">
             <Slider {...settings}>
@@ -51,10 +53,12 @@ const InsideTheLuxury = () => {
               Internet tend to repeat predefined chunks as necessary, making this the first true
               generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a
               handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
-              The generated Lorem Ipsum is therefore always free from repetition, inj</p>
+              The generated Lorem Ipsum is therefore always free from repetition, inj
+            </p>
           </div>
         </div>
       </div>
+      {isOpen && <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} image={mainPicture} />}
     </section>
   );
 };

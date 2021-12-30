@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -8,7 +8,9 @@ import img2 from "../assets/images/2.jpg";
 import img3 from "../assets/images/3.jpg";
 import img4 from "../assets/images/4.jpg";
 import img5 from "../assets/images/5.jpg";
+import Modal from "../Modal";
 
+const images = [img1, img2, img3, img4, img5];
 
 const getSettings = () => ({
   infinite: true,
@@ -48,19 +50,25 @@ const getSettings = () => ({
 
 const Gallery = () => {
   const  settings = getSettings();
+  const [isOpen, setIsOpen] = useState(false);
+  const [clickedImage, setClickedImage] = useState(null);
+
+  const handleClick = (image) => {
+    setClickedImage(image)
+    setIsOpen(true)
+  }
 
   return (
     <section className="gallery py-5">
       <h2 className="text-center py-5">GALLERY</h2>
       <div className="gallery-wrapper">
         <Slider {...settings}>
-          <img src={img1} alt=""/>
-          <img src={img2} alt=""/>
-          <img src={img3} alt=""/>
-          <img src={img4} alt=""/>
-          <img src={img5} alt=""/>
+          {images.map(image => {
+            return <img src={image} key={image.toString()} onClick={() => handleClick(image)} />
+          })}
         </Slider>
       </div>
+      {isOpen && <Modal isOpen={isOpen} onClose={() => setIsOpen(false)} image={clickedImage} /> }
     </section>
   );
 };

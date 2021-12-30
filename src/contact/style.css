@@ -8,6 +8,7 @@
 }
 
 .contact-bg {
+    background-position: center;
     opacity: .3;
     background-repeat: no-repeat;
     background-size: cover;

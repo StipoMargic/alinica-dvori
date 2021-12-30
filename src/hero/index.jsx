@@ -9,8 +9,10 @@ import img3 from "../assets/images/3.jpg";
 
 const Hero = () => {
   const settings = {
-    dots: true,
-    infinite: false,
+autoplay: true,
+    autoplaySpeed: 3000,
+    infinite: true,
+    pauseOnHover: false,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,

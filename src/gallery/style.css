@@ -1,16 +1,21 @@
 .gallery-wrapper img {
     padding: 0 1.5rem;
+    cursor: pointer;
+    overflow: hidden;
 }
 .gallery-wrapper{
     overflow: hidden;
+    margin: 0;
 }
 
 .gallery-wrapper .slick-active {
+    overflow: hidden;
     padding: 40px;
 }
 
 .gallery-wrapper .slick-center {
-    transform: scale(1.18);
+    transform: scale(1.48);
+    overflow: hidden;
 }
 .gallery-wrapper .slick-center img {
     padding: 0;
@@ -25,6 +30,5 @@
 }
 
 .gallery-wrapper {
-    height: 25rem;
     max-height: 25rem;
 }
