@@ -20,7 +20,9 @@ const Contact = () => {
               <div className="icon"><FaMapMarker/>adresa</div>
             </div>
           </div>
-        </div>
+      </div>
+      <div className="copyright">&copy; {new Date().getFullYear().toString()}<span>Developed by <a
+        href="https://web.facebook.com/stipo.margic/">Stipo Margić</a></span></div>
     </section>
   );
 };

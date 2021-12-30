@@ -15,3 +15,19 @@
     height: 100%;
     width: 100%;
 }
+
+.copyright {
+    color: #046ab1;
+font-size: 13px;
+  position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.copyright span {
+    margin-left: .75rem;
+}
+.copyright span a {
+    text-decoration: none;
+}
