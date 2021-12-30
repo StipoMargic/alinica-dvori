@@ -52,6 +52,12 @@ html {
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 999;
 }
+.StyledModalBody img {
+  max-height: 80vh;
+  max-width: 80vw;
+  object-fit: contain;
+  background-position: center;
+}
 
 p {
   font-size: 1.25rem;

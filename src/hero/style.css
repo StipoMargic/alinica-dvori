@@ -6,6 +6,7 @@
 }
 
 .hero img {
+    object-fit: cover; height: 90vh;
     padding: 0 !important;
     max-height: 90vh !important;
     width: 100%;

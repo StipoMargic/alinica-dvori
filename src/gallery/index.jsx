@@ -19,7 +19,6 @@ const getSettings = () => ({
   slidesToScroll: 1,
   pauseOnHover: false,
   autoplay: true,
-  centerMode: true,
   autoplaySpeed: 5000,
   responsive: [
     {
@@ -58,6 +57,8 @@ const Gallery = () => {
     setClickedImage(image)
     setIsOpen(true)
   }
+
+  console.log(isOpen)
 
   return (
     <section className="gallery py-5">
