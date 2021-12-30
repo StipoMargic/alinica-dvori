@@ -1,5 +1,6 @@
 .gallery-wrapper img {
     padding: 0 1.5rem;
+    overflow: hidden;
 }
 
 .gallery-wrapper .slick-active {

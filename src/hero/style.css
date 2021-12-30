@@ -24,19 +24,20 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) !important;
+    overflow: hidden;
 }
 
 .slick-dots {
     height: 3rem;
     bottom: 0;
-    z-index: 592
+    z-index: 592;
 }
 
 .slick-dots li {
     background: #ececec;
     border-radius: 50% !important;
-    height: 1rem !important;
-    width: 1rem !important;
+    height: 2rem !important;
+    width: 2rem !important;
 }
 
 .slick-dots .slick-active button {
