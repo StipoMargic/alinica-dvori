@@ -18,8 +18,9 @@
 
 .copyright {
     color: #046ab1;
-font-size: 13px;
-  position: absolute;
+    font-size: 13px;
+    font-weight: bold;
+    position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%)
