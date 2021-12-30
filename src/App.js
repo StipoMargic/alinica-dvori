@@ -7,8 +7,10 @@ import Hero from "./hero";
 function App() {
   return (
     <>
-      <Hero />
-      <InsideTheLuxury />
+      <Hero/>
+      <div className="spacer"/>
+      <InsideTheLuxury/>
+      <div className="spacer"/>
       <About/>
       <Gallery/>
       <Contact/>

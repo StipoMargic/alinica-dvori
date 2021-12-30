@@ -6,7 +6,7 @@
 }
 
 .hero img {
-    filter: brightness(30%);
+    object-fit: cover !important;
     padding: 0 !important;
     height: 90vh !important;
     width: 100%;
@@ -18,8 +18,8 @@
 }
 
 .hero h2 {
-    color: white;
-    z-index: 50;
+    color: black !important;
+    z-index: 501;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -40,4 +40,15 @@
 
 .slick-dots .slick-active button {
     background: orange !important;
+}
+
+.hero-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background: white;
+    opacity: .3;
+    left: 0;
+    z-index: 500;
 }

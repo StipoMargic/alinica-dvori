@@ -19,6 +19,7 @@ const Hero = () => {
   return (
     <>
       <div className="hero">
+        <div className="hero-overlay" />
         <h2>Oce li mrvica okrenit nes ispod peke?</h2>
           <Slider {...settings}>
             <img src={img1} alt=""/>

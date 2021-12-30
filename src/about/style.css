@@ -1,6 +1,7 @@
 .images img {
-    padding-bottom: 2rem;
+    box-shadow: 0 18px 30px 0 black;
     width: 90%;
+    margin-bottom: 2rem;
 }
 
 .about .row {
@@ -9,6 +10,27 @@
     align-items: center;
 }
 
-.about .row > div:nth-child(1){
+.about .row > div:nth-child(1) {
     font-size: 20px;
+}
+
+.images {
+    margin-top: 1rem;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-bg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+}
+
+.about {
+    position: relative;
 }

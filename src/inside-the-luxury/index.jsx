@@ -30,6 +30,7 @@ const InsideTheLuxury = () => {
   const settings = getSettings();
   return (
     <section className="inside-the-luxury">
+      <div style={{backgroundImage: "url(1.jpg)"}} className="luxury-bg" />
       <h2 className="text-center py-5">INSIDE THE LUXURY</h2>
       <div className="container">
         <div className="row">

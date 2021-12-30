@@ -32,3 +32,16 @@
     justify-content: center;
     align-items: center;
 }
+
+.luxury-bg {
+    position: absolute;
+    height: 100%;
+    opacity: .3;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.inside-the-luxury {
+    position: relative;
+}
